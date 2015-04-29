@@ -8,10 +8,15 @@
 	margin-top: 100px;
 }
 
-
-
 /********** CAROUSEL ************/
 
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
 
 .carousel-fade .carousel-inner .item {
   opacity: 0;
