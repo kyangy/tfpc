@@ -18,6 +18,12 @@
     width: 100%; /*img width*/
 }
 
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+    margin-top: 90px;
+}
+
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
