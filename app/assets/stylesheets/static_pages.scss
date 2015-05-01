@@ -5,6 +5,14 @@
 /********** HOME ************/
 
 .home-page {
+  width: 100%;
+  height: 100%;
+  background: image-url('church.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.primary {
 	margin-top: 80px;
 }
 
