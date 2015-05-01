@@ -1,3 +1,26 @@
 // Place all the styles related to the about_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about-page {
+	margin-top: 150px;
+	// background: image-url('pattern.jpg');
+	// background-repeat: repeat;
+}
+
+.about-title {
+	color: #81b902;
+	margin-left: 20px;
+}
+
+.about-primary {
+	margin-top: 50px;
+}
+
+.about-p {
+	margin-top: 20px;
+}
+
+.about-secondary {
+	height: 300px;
+}

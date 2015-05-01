@@ -4,13 +4,13 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="fa fa-bars"></i>
             </button>
-            <!-- <a href="/" class="logo">TFPC</a> -->
+            <a href="/"><%= image_tag "logo.jpg" %></a>
         </div>
 
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="">About</a>
+                    <%= link_to "About", about_path %>
                 </li>
                 <li>
                    <a href="">Connect</a>     
