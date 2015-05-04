@@ -27,6 +27,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'bootstrap-sass', '~> 3.3.3'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
