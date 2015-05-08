@@ -15,7 +15,15 @@
               <div class="carousel-caption">
                 <h1 class="animated bounceInLeft">Torrance First Presbyterian English Ministry</h1>
                 <h3 class="animated bounceInRight">Come and Join us today!</h3>
-                <button class="btn btn-success">Explore</button>
+
+                <% if logged_in? == false %>
+                  <%= link_to "Join", login_path, class: "btn btn-success" %>
+                <% end %>
+
+                <% if logged_in? == true %>
+                  <%= link_to "Explore", connect_path, class: "btn btn-success" %>
+                <% end %>
+
               </div>
             </div>
             <div class="item">
