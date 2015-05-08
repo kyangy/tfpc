@@ -9,10 +9,7 @@
 $(document).ready(function(){
 
     $('#calendar').fullCalendar({
-        events: [{
-            title: "event1",
-            start: "2015-05-05"
-        }]
+        events: '/events.json'
     });
 
 });
