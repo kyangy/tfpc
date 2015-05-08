@@ -30,6 +30,12 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 
+gem 'figaro'
+gem 'carrierwave'
+gem 'fog'
+
+gem "font-awesome-rails"
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

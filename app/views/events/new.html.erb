@@ -19,6 +19,11 @@
 					<%= f.datetime_select :start_time %>
 					</div>
 
+					<div>
+						<%= f.label :image, "Upload Image" %>
+						<%= f.file_field :image %>
+					</div>
+
 					<%= f.submit "Create Event!" %>
 
 
