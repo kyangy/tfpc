@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+include EventsHelper
 
 	def index
 		@events = Event.all
@@ -6,6 +7,8 @@ class EventsController < ApplicationController
 
 	def show
 		@event = Event.find(params[:id])
+		address = @event.address
+		google_maps(address)
 	end
 
 	def new
@@ -29,6 +32,6 @@ class EventsController < ApplicationController
 	private
 
 	def event_params
-		params.require(:event).permit(:title, :description, :start_time, :end_time, :image)
+		params.require(:event).permit(:title, :description, :start_time, :end_time, :image, :address)
 	end
 end
