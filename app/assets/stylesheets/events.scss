@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .e-form {
-	margin-top: 100px;
+	margin-top: 130px;
 }
 
 #event-page {
@@ -13,3 +14,11 @@
 .event-info {
 	margin-top: 50px;
 }
+
+.event-form {
+	padding: 20px;
+	background: #EBEBEB;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
