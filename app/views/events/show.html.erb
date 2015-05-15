@@ -7,8 +7,8 @@
 			</div>
 
 			<div class="col-md-3 event-info">
-				<h3><%= @event.start_time %></h3>
-				<iframe src="<%= @map %>"></iframe>
+				<h3><%= @event.start_time.getlocal.strftime("%D - %I:%M%p") %></h3>
+				<iframe src="<%= @map %>" width="350" height="265"></iframe>
 			</div>
 		</div>
 

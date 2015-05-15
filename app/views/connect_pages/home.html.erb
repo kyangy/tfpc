@@ -2,15 +2,26 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12 banner">
+			<div class="banner-words">
+				<h1 class="text-right">Get involved in our community</h1>
+				<h4 class="text-right">See what's happening around you</h4>
+				<div class="text-right">
+					<a href="#c-form" class="btn btn-circle page-scroll">
+					    <i class="fa fa-arrow-down animated"></i>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div id="calendar"></div>
+<section id="c-form">
+	<div class="container">
+		<div class="row">
+			<div id="calendar"></div>
+		</div>
 	</div>
-</div>
+</section>
      
 </section>
 
@@ -21,6 +32,14 @@ $(document).ready(function(){
     $('#calendar').fullCalendar({
         events: '/events.json'
     });
+
+    $('a.page-scroll').bind('click', function(event) {
+		    var $anchor = $(this);
+		    $('html, body').stop().animate({
+		        scrollTop: $($anchor.attr('href')).offset().top
+		    }, 1500, 'easeInOutExpo');
+		    event.preventDefault();
+		});
 
 });
 
