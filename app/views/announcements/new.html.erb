@@ -1,0 +1,18 @@
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div>
+				<h1>Upload Announcement</h1>
+
+				<%= form_for @announcement do |f| %>
+
+					<%= f.label :image, "Add Announcement" %>
+					<%= f.file_field :image %>
+
+					<%= f.submit "Upload" %>
+
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
