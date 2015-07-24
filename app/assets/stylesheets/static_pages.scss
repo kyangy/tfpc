@@ -14,21 +14,28 @@
 
 .primary {
 	margin-top: 80px;
-
 }
 
-
-
 .secondary {
-  height: 400px;
+  height: 470px;
   background: rgba(0, 0, 0, 0.7);
 }
 
 .third {
   height: 400px;
-  background: black;
+  background: image-url('pattern.jpg');
 }
 
+.main-info {
+  color: black;
+  padding-top: 150px;
+  font-size: 15px;
+}
+
+.s-word {
+  color: white;
+  padding-top: 150px;
+}
 
 /********** CAROUSEL ************/
 
