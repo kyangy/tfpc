@@ -1,10 +1,6 @@
-<br>
-<br>
-<br>
-<br>
-<div class="row">
+<div class="row login-form">
 	<div class="col-lg-offset-4 col-lg-4">
-		<h1 class="text-center">Welcome!</h1>
+		<h1 class="text-center l-welcome">Welcome!</h1>
 
 
 		<%= form_for :login do |f| %>
@@ -17,11 +13,14 @@
 		<div class="form-group">
 			<%= f.password_field :password, placeholder: "Password", class: "form-control"  %>
 		</div>
+		<p>Not a member? <%= link_to "Sign Up!", signup_path %></p>
 
 		<div class="text-center">
-			<%= f.submit "Log In", class: "btn btn-primary" %>
+			<%= f.submit "Log In", class: "btn btn-primary btn-clr" %>
 		</div>
 
 		<% end %>
+
+
 	</div>
 </div>

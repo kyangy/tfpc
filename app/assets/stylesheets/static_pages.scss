@@ -22,19 +22,31 @@
 }
 
 .third {
-  height: 400px;
-  background: image-url('pattern.jpg');
+  height: 520px;
+  background: black;
+  padding: 20px;
 }
 
 .main-info {
-  color: black;
-  padding-top: 150px;
-  font-size: 15px;
+  color: white;
+  padding-top: 130px;
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.main-time {
+  color: tomato;
 }
 
 .s-word {
   color: white;
-  padding-top: 150px;
+  padding-top: 170px;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+.foot-word {
+  padding-top: 70px;
 }
 
 /********** CAROUSEL ************/

@@ -49,23 +49,12 @@
   <section class="secondary">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 word-cloud"></div>
-        <div class="col-md-4">
-          <h2 class="s-word">Thanks be to God</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="third">
-    <div class="container">
-      <div class="row">
         <div class="col-md-offset-4 col-md-4 text-center">
           <div class="main-info">
-            <p>
+            <h2>
               Join Us On Sundays
-            </p>
-            <p>
+            </h2>
+            <p class="main-time">
               11:00 A.M. - 12:30 P.M.
             </p>
             <p>
@@ -78,6 +67,18 @@
               Fax: 310.782.0937
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="third">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 word-cloud"></div>
+        <div class="col-md-4">
+          <h2 class="s-word">Thanks be to God</h2>
+          <p class="foot-word">&copy; 2015 Torrance First Presbyterian Church | English Ministry | All rights reserved.
         </div>
       </div>
     </div>
@@ -109,7 +110,7 @@ function wordCloud(selector) {
         //Entering words
         cloud.enter()
             .append("text")
-            .style("font-family", "Impact")
+            .style("font-family", "Nunito")
             .style("fill", function(d, i) { return fill(i); })
             .attr("text-anchor", "middle")
             .attr('font-size', 1)

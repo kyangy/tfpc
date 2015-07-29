@@ -22,6 +22,11 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.btn-clr {
+    background-color: #81b902;
 }
 
  /********** NAV BAR ************/
@@ -29,7 +34,7 @@ body {
 .navbar-custom {
     margin-bottom: 0;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    // font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
 
