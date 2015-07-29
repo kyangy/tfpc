@@ -3,14 +3,10 @@
 		<div class="row e-form">
 			<div class="col-md-offset-2 col-md-4 event-form">
 				<%= form_for @event do |f| %>
-					<h1 class="text-center">Create an Event!</h1>
+					<h1 class="l-welcome">Create an Event!</h1>
 					
 					<div class="form-group">
 					<%= f.text_field :title, placeholder: "Title", class: "form-control" %>
-					</div>
-
-					<div>
-					<%= f.text_area :description, placeholder: "About this event...", class: "form-control", :cols => 40, :rows => 10 %>
 					</div>
 
 					<div>
@@ -29,11 +25,15 @@
 					<br>
 					<%= f.submit "Submit", class: "btn btn-success" %>
 
-				<% end %>
+				
 			</div>
 
-			<div class="col-md-6">
-				
+			<div class="col-md-4">
+				<div class="c-text">
+					<%= f.text_area :description, placeholder: "About this event...", class: "form-control", :cols => 40, :rows => 8 %>
+				</div>
+
+					<% end %>
 			</div>
 		</div>
 	</div>
