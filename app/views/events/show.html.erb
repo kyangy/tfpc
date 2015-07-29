@@ -1,3 +1,5 @@
+<% if logged_in? == true %>
+
 <section id="event-page">
 	<div class="container-fluid">
 		<div class="row e-content">
@@ -21,3 +23,15 @@
 
 	</div>
 </section>
+
+<% end %>
+
+<% if logged_in? == false %>
+
+<br>
+<br>
+<br>
+<br>
+<h1>Sorry, you must be a member of the church to see events.</h1>
+
+<% end %>
