@@ -17,10 +17,24 @@ class AnnouncementsController < ApplicationController
 		end
 	end
 
+	def edit
+		@announcement = Announcement.find(params[:id])
+	end
+
 	def update
+		@announcement = Announcement.find(params[:id])
+		if @announcement.update_attributes(announcement_params)
+			redirect_to announcements_path
+		else
+			render :edit
+		end
 	end
 
 	def destroy
+		@announcement = Announcement.find(params[:id])
+		if @announcement.destroy
+			redirect_to announcements_path
+		end
 	end
 
 	private

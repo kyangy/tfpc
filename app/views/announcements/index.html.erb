@@ -1,10 +1,10 @@
-<section>
+<section class="announcement animated zoomIn">
 	<div class="container-fluid">
-		<div class="row">
-			<div>
+		<div class="row text-center">
+			<div class="col-md-12">
 				<% @announcements.each do |announcement| %>
 
-					<%= image_tag announcement.image.url, :size => "360x280", :crop => :fill %>
+					<%= image_tag announcement.image.url, :size => "950x600", :crop => :fill %>
 
 				<% end %>
 			</div>

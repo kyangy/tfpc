@@ -1,7 +1,7 @@
 <section>
 	<div class="container-fluid">
 		<div class="row e-form">
-			<div class="col-md-offset-2 col-md-4 event-form">
+			<div class="col-md-offset-2 col-md-4 event-form animated fadeInLeft">
 				<%= form_for @event do |f| %>
 					<h1 class="l-welcome">Create an Event!</h1>
 					
@@ -28,7 +28,7 @@
 				
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 animated fadeInRight">
 				<div class="c-text">
 					<%= f.text_area :description, placeholder: "About this event...", class: "form-control", :cols => 40, :rows => 8 %>
 				</div>

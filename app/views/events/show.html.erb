@@ -3,19 +3,19 @@
 <section id="event-page">
 	<div class="container-fluid">
 		<div class="row e-content">
-			<div class="col-md-offset-1 col-md-6">
+			<div class="col-md-offset-1 col-md-6 animated fadeInLeft">
 				<h1><%= @event.title %></h1>
 				<img src="<%= @event.image %>" width="610" height="300">
 			</div>
 
-			<div class="col-md-3 event-info">
+			<div class="col-md-3 event-info animated fadeInRight">
 				<h3><%= @event.start_time.getlocal.strftime("%D - %I:%M%p") %></h3>
 				<iframe src="<%= @map %>" width="350" height="265"></iframe>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-md-offset-1 col-md-6">
+			<div class="col-md-offset-1 col-md-6 animated fadeInUp">
 				<button class="btn btn-primary">Share</button>
 				<p><%= @event.description %></p>
 			</div>
@@ -28,10 +28,16 @@
 
 <% if logged_in? == false %>
 
-<br>
-<br>
-<br>
-<br>
-<h1>Sorry, you must be a member of the church to see events.</h1>
+<section class="event-error">
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-md-offset-4 col-md-4">
+				<h1>Sorry, you must be a member of the church to see events.</h1>
+				<%= link_to "Sign Up!", signup_path %>
+			</div>
+		</div>
+	</div>
+
+</section>
 
 <% end %>
